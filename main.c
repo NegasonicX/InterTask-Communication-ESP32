@@ -5,6 +5,15 @@
 #include "driver/gpio.h"
 #include "sdkconfig.h"
 
+/**
+ * Brief:
+ * This code shows a basic programming to perform inter-task communication using queue logic
+ *
+ * GPIO status:
+ * GPIO2   : output ( built-in LED on Devkit V1 )
+ *
+ */
+
 #define builtin 2                   //++ Define the built-in LED on Devkit V1
 
 QueueHandle_t  q=NULL;              //++ Create a handle for Queue
